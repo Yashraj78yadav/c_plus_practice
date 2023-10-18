@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     int i,j,n;
-    char ch;
+    char ch =65;
     cout<<"Enter the value of n :";
     cin>>n;
     i=1;
@@ -10,8 +10,9 @@ int main(){
         j=1;
          
         while(j<=n){
-             ch='A'+i-j;
+             
             cout<<ch<<" ";
+            ch+=1;
             j+=1;
         }
         cout<<endl;
