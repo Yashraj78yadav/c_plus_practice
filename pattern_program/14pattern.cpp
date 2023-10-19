@@ -7,9 +7,9 @@ int main(){
     cin>>n;
     while(i<=n){
         j=1;
-        char ch=('A'+i-1); 
+        // char ch=('A'+i-1); 
         while(j<=i){
-            // char ch=('A'+i-1); 
+            char ch=('A'+i-1); 
             cout<<ch<<" ";
             ch+=1;
             j+=1;
