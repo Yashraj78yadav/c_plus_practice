@@ -9,7 +9,7 @@ int main(){
             cout<<"$";
         }
         for(int col2=0;col2<row+1;col2++){
-            if(row==0||row==n-1||col2==0||col2==row+2){
+            if(row==0||row==n-1||col2==0||col2==row+1){
                 cout<<"* ";
             }
             else{
