@@ -18,21 +18,22 @@ int main(){
         }
         cout<<endl;
     }
-    int num1=1;
+    int num1=num-n;
    for(int row=0;row<n;row++){
-    //  int num1=2*num-2*row-1;
-    
+    int count=num1;
         for(int col1=0;col1<n-row;col1++){
             if(col1==n-row-1){
-                cout<<num1<<" ";
-                num1++;
+                cout<<count<<" ";
+                count++;
             }
             else{
-                cout<<num1<<" "<<"* ";
-                num1++;
+                cout<<count<<" "<<"* ";
+                count++;
             }
         }
+        num1=num1-(n-row-1);
         cout<<endl;
+
     }
 
 }
