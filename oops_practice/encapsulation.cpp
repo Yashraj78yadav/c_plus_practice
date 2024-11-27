@@ -16,12 +16,14 @@ class Student{
     int no;
 
     // constructor
-    Student(int id,string name,int age,int nos){
+    Student(int id,string name,int age,int nos,string gf,int no){
         cout<<this->name<<"constructor is called"<<endl;
         this->id=id;
         this->name=name;
         this->age=age;
         this->nos=nos;
+        this->gf=gf;
+        this->no=no;
     }
 
     // behaviour/method
@@ -41,4 +43,6 @@ class Student{
 
 int main(){
 
+Student A(1,"yash",21,4);
+return 0;
 }
