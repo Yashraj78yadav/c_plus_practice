@@ -15,6 +15,7 @@ class Student{
     string gf;
     int no;
 
+    public:
     // constructor
     Student(int id,string name,int age,int nos,string gf,int no){
         cout<<this->name<<"constructor is called"<<endl;
@@ -39,10 +40,16 @@ class Student{
         cout<<this->name<<" destructor is called "<<endl;
     }
 
+    private:
+    void gfchatting(){
+        cout<<this->gf<<" is chatting with her boyfriend"<<endl;
+    }
+
 };
 
 int main(){
 
-Student A(1,"yash",21,4);
+Student A(1,"yash",21,4,"xyz",4);
+A.sleep();
 return 0;
 }
